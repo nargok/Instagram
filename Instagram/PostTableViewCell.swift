@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class PostTableViewCell: UITableViewCell {
 
@@ -16,6 +18,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var commentBtn: UIButton!
+    @IBOutlet weak var commentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,10 +53,12 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: UIControlState.normal)
         }
         
-        // 改造(案) コメント表示 commentCellのインスタンスを生成
+        // コメントデータを設定
+        commentLabel.text = ""
+        let comments = postData.comments
         
-        // 改造(案) commentCellのデータを設定
-
-        
-    }        
+        for comment in comments {
+            commentLabel.text = commentLabel.text! + comment["name"]! + ":" + comment["comment"]! + "\n"
+        }        
+    }
 }

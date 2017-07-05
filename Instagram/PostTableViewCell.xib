@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="505" height="633"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="505" height="633"/>
+                <rect key="frame" x="0.0" y="0.0" width="505" height="632.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfc-MO-NQf">
@@ -49,8 +49,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9df-7m-oxk">
-                        <rect key="frame" x="18" y="567" width="469" height="48"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9df-7m-oxk">
+                        <rect key="frame" x="18" y="567" width="469" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,30 +63,40 @@
                         </constraints>
                         <state key="normal" image="comment"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWW-Wd-Cdj">
+                        <rect key="frame" x="18" y="597.5" width="469" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="9df-7m-oxk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="0hZ-eB-Tux"/>
                     <constraint firstAttribute="trailingMargin" secondItem="wfc-MO-NQf" secondAttribute="trailing" id="6zU-li-AB7"/>
                     <constraint firstItem="9df-7m-oxk" firstAttribute="top" secondItem="Uqq-jk-pvy" secondAttribute="bottom" constant="10" id="8NP-ZB-cgS"/>
+                    <constraint firstItem="lWW-Wd-Cdj" firstAttribute="top" secondItem="9df-7m-oxk" secondAttribute="bottom" constant="10" id="AgI-y3-Wd2"/>
                     <constraint firstItem="O6b-QJ-6F4" firstAttribute="centerY" secondItem="Uqq-jk-pvy" secondAttribute="centerY" id="BiC-TK-3ys"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="9df-7m-oxk" secondAttribute="bottom" constant="10" id="FOl-wo-Q70"/>
                     <constraint firstItem="O6b-QJ-6F4" firstAttribute="leading" secondItem="Uqq-jk-pvy" secondAttribute="trailing" constant="10" id="IDo-xh-zOy"/>
                     <constraint firstItem="Uqq-jk-pvy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="JOT-bZ-EMq"/>
                     <constraint firstItem="Uqq-jk-pvy" firstAttribute="top" secondItem="wfc-MO-NQf" secondAttribute="bottom" constant="10" id="KnK-Ge-ONL"/>
                     <constraint firstItem="tj1-55-fLG" firstAttribute="leading" secondItem="O6b-QJ-6F4" secondAttribute="trailing" constant="10" id="OPo-q0-q6r"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lWW-Wd-Cdj" secondAttribute="trailing" constant="10" id="VSW-KB-Sfz"/>
                     <constraint firstItem="wfc-MO-NQf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Xpm-ox-de5"/>
                     <constraint firstAttribute="trailingMargin" secondItem="cOl-TW-eKK" secondAttribute="trailing" constant="10" id="YPw-ye-LTL"/>
                     <constraint firstItem="cOl-TW-eKK" firstAttribute="centerY" secondItem="Uqq-jk-pvy" secondAttribute="centerY" id="dGA-E2-Uof"/>
                     <constraint firstItem="tj1-55-fLG" firstAttribute="centerY" secondItem="Uqq-jk-pvy" secondAttribute="centerY" id="kJc-gz-fHi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lWW-Wd-Cdj" secondAttribute="bottom" constant="10" id="mri-wz-GZ0"/>
                     <constraint firstItem="wfc-MO-NQf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="sbM-PX-4wJ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="9df-7m-oxk" secondAttribute="trailing" constant="10" id="tIw-C1-pIR"/>
                     <constraint firstItem="O6b-QJ-6F4" firstAttribute="centerY" secondItem="Uqq-jk-pvy" secondAttribute="centerY" id="tjZ-PO-hJ4"/>
+                    <constraint firstItem="lWW-Wd-Cdj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="vEz-x5-Jxa"/>
                     <constraint firstItem="cOl-TW-eKK" firstAttribute="centerY" secondItem="Uqq-jk-pvy" secondAttribute="centerY" id="vg9-b0-Fx4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="captionLabel" destination="9df-7m-oxk" id="JrQ-oE-FTw"/>
                 <outlet property="commentBtn" destination="tj1-55-fLG" id="amd-9b-z4c"/>
+                <outlet property="commentLabel" destination="lWW-Wd-Cdj" id="ZMM-yy-6AJ"/>
                 <outlet property="datesLabel" destination="cOl-TW-eKK" id="J3i-x2-spe"/>
                 <outlet property="likeButton" destination="Uqq-jk-pvy" id="mWQ-hC-XMI"/>
                 <outlet property="likeLabel" destination="O6b-QJ-6F4" id="h69-5Y-Axs"/>
